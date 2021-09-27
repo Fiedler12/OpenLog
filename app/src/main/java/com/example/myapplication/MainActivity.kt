@@ -2,30 +2,22 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.adapter.ItemAdapter
+import com.example.myapplication.data.Datasource
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val kulhydrater = Log("Kulhydrater")
-        kulhydrater.lowerBound = 0
-        val kalorier = Log("Kcal")
-        kulhydrater.lowerBound = 0
-        val ketoner = Log("Ketoner")
-        ketoner.lowerBound = 0
-
-        val logs = mutableListOf<Log>()
-        logs.add(kulhydrater)
-        logs.add(kalorier)
-        logs.add(ketoner)
+        // Initialize data.
+        val myDataset = Datasource().loadLogs()
+        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        recyclerView.adapter = ItemAdapter(this, myDataset)
+        // Use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        recyclerView.setHasFixedSize(true)
     }
 
-
-    class Log constructor(unit: String){
-        val values = mutableListOf<Int>()
-        var upperBound: Int? = null
-        var lowerBound: Int? = null
-        val unit = unit
-    }
 }

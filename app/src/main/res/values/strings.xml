@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Openlog</string>
+    <string name="kulhydrater">Kulhydrater</string>
+    <string name="ketoner">Ketoner</string>
+    <string name="kalorier">Kalorier</string>
+    <string name="kulhydrater_unit">Kulhydrater</string>
+    <string name="ketoner_unit">Ketoner</string>
+    <string name="kalorier_unit">Kcal</string>
 </resources>
