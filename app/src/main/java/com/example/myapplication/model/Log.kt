@@ -1,6 +1,6 @@
 package com.example.myapplication.model
 
-data class Log(val stringNameId: Int, val stringMeasureId: Int){
+data class Log(val stringName: String, val stringMeasure : String) {
     val loggedValues = mutableListOf<LoggedValue>()
 
 
