@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.controller.DataController
+import com.example.myapplication.model.Log
 
 class ItemAdapter(
     private val context: Context,
@@ -38,7 +40,7 @@ class ItemAdapter(
      */
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.stringNameId)
+        holder.textView.text = item.stringName
     }
 
     /**
