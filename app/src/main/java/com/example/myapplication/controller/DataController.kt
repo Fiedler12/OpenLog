@@ -11,11 +11,12 @@ class DataController {
         val newLog = Log(logName, logUnit)
     }
 
-    fun loadLogs() : List<Log> {
+    fun loadLogs() : MutableList<Log> {
         return logs
     }
 
+    fun getLog (logName : String) : Log {
 
-
+    }
 
 }
