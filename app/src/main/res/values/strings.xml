@@ -6,4 +6,7 @@
     <string name="kulhydrater_unit">Kulhydrater</string>
     <string name="ketoner_unit">Ketoner</string>
     <string name="kalorier_unit">Kcal</string>
+    <string name="Title_name">OpenLog</string>
+    <string name="add_button_icon">add_button_icon</string>
+    <string name="logcycle_button_text">Logcycle</string>
 </resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_button_margin">16dp</dimen>
+    <dimen name="recycler_view_height">364dp</dimen>
+    <dimen name="logcycle_button_width">264dp</dimen>
+    <dimen name="logcycle_button_height">64dp</dimen>
+    <dimen name="logcycle_margin">64dp</dimen>
+</resources>
