@@ -11,7 +11,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val dataSet = DataController(this).loadLogs()
+        val dataController = DataController(this)
+        dataController.initLogs()
+        dataController.createLog("test1", "testunit1")
+        val dataSet = dataController.loadLogs()
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = CustomAdapter(dataSet)
     }
