@@ -14,7 +14,7 @@ class DataController(val context: Context) {
     }
 
     fun loadLogs() : MutableList<Log> {
-        createLog("Blodsukker", "milimol pr. Liter")
+        createLog("Blodsukker", "Milimol pr. Liter")
         createLog("Kulhydrater", "Gram")
         createLog("Kalorier", "Kcal")
         return logs

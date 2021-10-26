@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
 
         <Button
             android:id="@+id/cycleButton"
@@ -12,14 +13,17 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top|center"
             android:text="Log Cycle"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="25dp"/>
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="366dp"
+            android:layout_height="579dp"
+            android:layout_marginTop="50dp"
             android:scrollbars="vertical"
-            app:layoutManager="LinearLayoutManager"
-            android:layout_marginTop="50dp"/>
+            android:layout_gravity="center"
+            app:layoutManager="LinearLayoutManager" />
 </FrameLayout>
