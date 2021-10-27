@@ -20,10 +20,24 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
-            android:layout_width="366dp"
-            android:layout_height="579dp"
-            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_view_height"
+            android:layout_marginTop="@dimen/logcycle_margin"
             android:scrollbars="vertical"
-            android:layout_gravity="center"
-            app:layoutManager="LinearLayoutManager" />
-</FrameLayout>
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logcycle_button" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/add_button_margin"
+            android:layout_marginTop="33dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/add_button_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+            app:srcCompat="@drawable/ic_add_round_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
