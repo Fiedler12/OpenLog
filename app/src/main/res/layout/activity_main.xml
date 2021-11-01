@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@android:color/darker_gray">
+    tools:context=".Activities.MainActivity"
+    android:background="@android:color/darker_gray"
+    android:id="@android:id/home">
 
 
         <Button
@@ -46,7 +47,6 @@
             android:contentDescription="@string/add_button_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recycler_view"
-            app:srcCompat="@drawable/ic_add_round_button"
-            android:onClick="clickedCreateLog"/>
+            app:srcCompat="@drawable/ic_add_round_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
