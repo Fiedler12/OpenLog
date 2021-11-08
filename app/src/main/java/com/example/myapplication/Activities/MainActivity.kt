@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
@@ -33,8 +34,9 @@ class MainActivity : AppCompatActivity() {
 
     fun getMainPage() {
         setContentView(R.layout.activity_main)
-        val dataSet = dataController.loadLogs()
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        val dataSet = dataController.loadLogs()
         recyclerView.adapter = CustomAdapter(dataSet)
+
     }
 }

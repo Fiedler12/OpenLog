@@ -21,6 +21,10 @@
         <activity android:name=".Activities.NewLogActivity"
         android:label="Create a new Log"
             />
+        <activity android:name=".Activities.SingleEntryActivity"
+            android:label="Log single entry"
+            />
+
 
     </application>
 
