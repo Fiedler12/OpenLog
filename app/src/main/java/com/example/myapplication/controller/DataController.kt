@@ -1,11 +1,9 @@
 package com.example.myapplication.controller
 
-import android.content.Context
+import com.example.myapplication.Activities.RecyclerFragment
 import com.example.myapplication.model.Log
-import java.lang.Exception
-import java.lang.reflect.Field
 
-class DataController(val context: Context) {
+class DataController(val context: RecyclerFragment) {
     val logs = mutableListOf<Log>()
 
     fun createLog(logName: String, logUnit: String) {
